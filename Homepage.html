@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c98abcd02.js" crossorigin="anonymous"></script>
+    <title>Homepage</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(http://localhost/fifthsempro/Hpgimages/abc.jpg);
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            background-repeat: no-repeat;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            color: #ffffff; 
+            text-align: center;
+            padding: 1%;
+            font-size:small;
+        }
+
+        h1 {
+            margin: 1;
+        }
+
+        .container {
+            max-height: 7000px;
+            max-width: 6000px;;
+            margin: 0;
+            padding: 1%;
+           
+        }
+
+        .Quote {
+            color: rgb(249, 249, 250);
+            padding: 1%;
+            margin: 0;
+            margin-bottom: 50px 30px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-size:xx-large;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .Quote h1 {
+            margin: 0;
+        }
+
+        .btn{
+            display: header;
+            text-align: left;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: x-large;
+            margin-top: 1;
+        }
+        button {
+            display: header;
+            background: none; 
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: x-large;
+            margin-left: -14px;
+       
+        }
+        .custom-spacing{
+            line-height: 0.2;
+             /* You can adjust this value to decrease or increase the spacing */
+        }
+        .startbutton{
+            text-align: center;
+            font-size: large;
+            margin-top: 1;
+        }
+        .searchInput {
+            display: header;
+            background: none;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 20px;
+            margin-top: -10px;
+            margin-right: -10px;
+            border-left: 0px;
+            padding: 8px;
+            font-size: 40px;
+            width: 98px;
+            background-color: none;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            background: transparent;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: x-large;
+            margin-top: 0;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#header {
+          position: fixed;
+          background: none;
+          margin-bottom: 12px;
+          top: 25.5px;
+          right: 0px;
+          background-color: transparent; /* Background with transparency */
+          padding: 10px;
+          text-align: right;
+          background: transparent;
+          font-size:20px;
+        }
+form{
+    margin-left: -70px;
+    background-color: transparent;
+}
+    
+.searchInput {
+  text-align: right;
+  margin: 0;
+  background: none;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-right: 30px;
+  border-left: 20px;
+  padding: 8px;
+  font-size: 40px;
+  width: 98px;
+  background-color: none;
+  size: 50px;
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayesha Event Ticket Pro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="navbar">
+                <a href="Homepage.html"><button style="font-size: 28px;" onclick="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</button></a>
+                <a href="abtus.html"><button  style="font-size: 28px;" onclick="">About Us</button></a>
+                <a href="features.html"><button style="font-size: 28px;" onclick="">Features</button></a>
+                <a href="services.html"><button style="font-size: 28px;" onclick="">Services</button></a>
+                <a href="contactu.html"><button style="font-size: 28px;" onclick="">Contact Us</button></a>
+            
+            <div id="header">
+                <form onsubmit="return redirectPage()">
+                 
+                  <input type="text" placeholder="Search events" id="searchInput" background="none"><i id="submitIcon"class="fa-sharp fa-solid fa-magnifying-glass fa-spin-pulse"onclick="redirectPage()"></i>
+                </div>     
+                </form>
+                <script>
+                        function redirectPage() {
+                          // Get input value and convert to lowercase for case-insensitive matching
+                          var input = document.getElementById('searchInput').value.toLowerCase();
+                          
+                          // Define pages based on input
+                          var pageMappings = [
+                            { keywords: ['magic', 'magicshows', 'term1'], url: 'Magicshow.html' },
+                            { keywords: ['events', 'eventslist', 'eventcategories'], url: 'eventdetails.html' },
+                            { keywords: ['makeup', 'makeupartist', 'term1'], url: 'Makeupartistry.html' },
+                            { keywords: ['hair', 'hairstylist', 'term1'], url: 'Hairstyling.html' },
+                            { keywords: ['tattoo', 'tattooartist', 'term1'], url: 'Tatooart.html' },
+                            { keywords: ['theatrenight', 'movie', 'term1'], url: 'TheatreNight.html' },
+                          ];
+                    
+                          // Check if input matches keywords for any page
+                          for (var i = 0; i < pageMappings.length; i++) {
+                            var keywords = pageMappings[i].keywords;
+                    
+                            // Check if any part of the input matches any part of the keyword
+                            if (keywords.some(keyword => input.includes(keyword))) {
+                              window.location.href = pageMappings[i].url;
+                              return false; // Prevent the form from submitting
+                            }
+                          }
+                    
+                          // Default to a generic page if no specific match
+                          window.location.href = 'generic.html';
+                          return false; // Prevent the form from submitting
+                        }
+                      </script>
+                </form>
+            </div>      
+              
+         </h1>
+    </header>
+    <div class="container">
+        <div class="Quote">
+            <div style="position:relative; right: -90px;">
+            <p class="custom-spacing">Life is an Event</p></div>
+            <p class="custom-spacing">Make it Joyous and Memorable</p>
+        </div>
+    </div>
+    <div class="startbutton">
+        <div style="position:relative; margin-top: -50px;">
+            <a href="eventdetails.html"class="btn"font-size: large>Get Started</a>
+        </div>    
+    </div>      
+    <script src="script.js"></script> 
+</body>
+</html>

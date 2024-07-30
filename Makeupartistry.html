@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezgBk/xjKuMnLdPpLzBlvNbnh8ZbEOkp1HBeOJNl0jSx5uJHvJ8aqybcrFjXgcf6" crossorigin="anonymous">
+    <title>Makeup Event Details</title>
+    <style>
+        body {
+            background-image: url('http://localhost/fifthsempro/Hpgimages/Makeup2.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        header {
+            max-width: 250px;
+            color: #181717;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box1 {
+            width: 450px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #fff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .box1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2, p {
+            color: #fff;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        button {
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="http://localhost/fifthsempro/Hpgimages/Makeup.jpeg" alt="Event Image">
+            <h2>Zara Makeovers</h2>
+            <p>"Book from the best Makeup Artist in town!"</p>
+            <form action="makeup.php" method="post">
+                <input type="hidden" name="show_id" value="1">
+                <button type="submit">Book Your Artist Now!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c98abcd02.js" crossorigin="anonymous"></script>
+    <title>Tattoo Event Details</title>
+    <style>
+        body {
+            background-image: url('http://localhost/fifthsempro/Hpgimages/tattoo3.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            max-width: 250px;
+            color: #181717;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            height: 200px; /* Adjusted container height */
+            width: 30%; /* Adjusted container width */
+            margin: 50px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            flex: 1;
+            margin: 10px;
+            padding: 15px; /* Adjusted padding */
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+        }
+
+        .box1 img {
+            width: 60%; /* Adjusted image size */
+            height: 50%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.6rem; /* Adjusted font size */
+        }
+
+        p {
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 1.2rem; /* Adjusted font size */
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            font-size: 0.8rem; /* Adjusted font size */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="box1">
+            <img src="http://localhost/fifthsempro/Hpgimages/tatoo.jpeg" alt="Event Image">
+            <h2>Aish Artist</h2>
+            <p>"Book from the best Tattoo Artist in town!"</p></br>
+            <form action="tatoo.php" method="post">
+                <input type="hidden" name="show_id" value="1">
+                <button type="submit">Book Your Artist Now!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

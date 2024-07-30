@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: hsla(180, 8%, 95%, 0.893);
+}
+
+.signupp {
+    width: 400px;
+    margin: 0 auto;
+    background: #09345d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(86, 134, 165, 0.414);
+    text-align: center;
+}
+
+h2 {
+    color: #e2dddd;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type"text"],
+input[type="password"],
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background: #0b5a74;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

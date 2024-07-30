@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c98abcd02.js" crossorigin="anonymous"></script>
+    <title>Adminpage</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(http://localhost/fifthsempro/Hpgimages/abc.jpg);
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            background-repeat: no-repeat;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            color: #fff; 
+            text-align: center;
+            padding: 1%;
+            font-size:small;
+            margin-top: -20px;
+        }
+
+        h1 {
+            margin: 1;
+        }
+
+        .container {
+            max-height: 7000px;
+            max-width: 6000px;;
+            margin: 0;
+            padding: 1%;
+           
+        }
+
+        .Quote {
+            color: rgb(249, 249, 250);
+            padding: 1%;
+            margin: 0;
+            margin-bottom: 50px 30px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-size:xx-large;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .Quote h1 {
+            margin: 0;
+        }
+
+        .btn{
+            display: header;
+            text-align: left;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: x-large;
+            margin-top: 0;
+        }
+        button {
+            display: header;
+            background: none; 
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: x-large;
+            margin-left: -14px;
+       
+        }
+        .custom-spacing{
+            line-height: 0.2;
+             /* You can adjust this value to decrease or increase the spacing */
+        }
+        .startbutton{
+            text-align: center;
+            font-size: large;
+            margin-top: 1;
+        }
+        .searchInput {
+            display: header;
+            background: none;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 20px;
+            margin-top: -10px;
+            margin-right: -50px;
+            border-left: 0px;
+            padding: 8px;
+            font-size: 40px;
+            width: 98px;
+            background-color: none;
+        }
+
+        /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#header {
+          position: fixed;
+          background: none;
+          margin-bottom: 12px;
+          top: 25.5px;
+          right: 0px;
+          background-color: transparent; /* Background with transparency */
+          padding: 10px;
+          text-align: right;
+          background: transparent;
+        }
+    
+.searchInput {
+  text-align: right;
+  margin: 0;
+  background: none;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-right: 30px;
+  border-left: 0px;
+  padding: 8px;
+  font-size: 40px;
+  width: 98px;
+  background-color: none;
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayesha Event Ticket Pro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select style="font-size: 20px; font-family:  'Arial', bold, sans-serif;"id="bookingOptions" onchange="navigateToPage()">
+                <option style="font-family:  'Arial', bold, sans-serif;"value="" disabled selected>Select Booking Details Of Magic Shows</option>
+                <option value="magicshowsbookingdetails.php">Magic Show-1</option>
+                <option value="magicshowsbookingdetails2.php">Magic Show-2</option>
+                <option value="magicshowsbookingdetails3.php">Magic Show-3</option>
+                <!-- Add more options as needed -->
+            </select>&nbsp;&nbsp;
+            <a href="makeupeventbooking details.php"><button onclick="">BD of Makeup event</button></a>&nbsp;
+            <a href="hairstylesbookingdetails.php"><button onclick="">BD of Hair Styles</button></a>&nbsp;
+            <a href="tatoobookingdetails.php"><button onclick="">BD of Tattoo Event</button></a>&nbsp;
+            <a href="theatrenightbookingdetails.php"><button onclick="">BD of Theatre Night</button></a>
+            <div id="header">
+                
+                <script>
+                        function redirectPage() {
+                          // Get input value and convert to lowercase for case-insensitive matching
+                          var input = document.getElementById('searchInput').value.toLowerCase();
+                          
+                          // Define pages based on input
+                          var pageMappings = [
+                            { keywords: ['magic', 'keyword1', 'term1'], url: 'Magicshow.html' },
+                            { keywords: ['events', 'eventslist', 'eventcategories'], url: 'eventdetails.html' },
+                            { keywords: ['makeup', 'keyword1', 'term1'], url: 'Makeupartistry.html' },
+                            { keywords: ['hair', 'keyword1', 'term1'], url: 'Hairstyling.html' },
+                          ];
+                    
+                          // Check if input matches keywords for any page
+                          for (var i = 0; i < pageMappings.length; i++) {
+                            var keywords = pageMappings[i].keywords;
+                    
+                            // Check if any part of the input matches any part of the keyword
+                            if (keywords.some(keyword => input.includes(keyword))) {
+                              window.location.href = pageMappings[i].url;
+                              return false; // Prevent the form from submitting
+                            }
+                          }
+                    
+                          // Default to a generic page if no specific match
+                          window.location.href = 'generic.html';
+                          return false; // Prevent the form from submitting
+                        }
+                      </script>
+                </form>
+            </div>      
+              
+         </h1>
+    </header>
+    <div class="container">
+        <div class="Quote">
+            <div style="position:relative; right: -90px;">
+            <p class="custom-spacing">Life is an Event</p></div>
+            <p class="custom-spacing">Make it Joyous and Memorable</p>
+        </div>
+    </div>     
+    <script>
+        function navigateToPage() {
+            var selectElement = document.getElementById('bookingOptions');
+            var selectedValue = selectElement.value;
+
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>
+

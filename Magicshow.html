@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c98abcd02.js" crossorigin="anonymous"></script>
+    <title>Events Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50; /* Dark Blue-Grey */
+            max-width: 100%;
+            color: #ecf0f1; /* Light Grey */
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ecf0f1; /* Light Grey */
+            font-size: 28px; /* Adjust font size as needed */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #f5f4f3;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 720px; /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box img {
+            width: 100%;
+            height: 60%; /* Adjust the height as needed */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin: 0;
+            color: #3498db; /* Blue */
+        }
+
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        button {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker Blue */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shows-Details</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <img src="http://localhost/fifthsempro/Hpgimages//show1.jpg" alt="Event Image">
+            <h2>Enchanted Dreams.Mystical Delights</h2>
+            <p>Join us for an enchanting evening of magic and illusion!</p>
+            <p><strong>Date:</strong> December 23, 2023</p>
+            <p><strong>Time:</strong> 8:00 PM</p>
+            <p><strong>Location:</strong> #402, 6th Cross Road, Silicon Town, Electronic City Phase 2, Bangalore - 560100 (Near Shuttle Court)</p>
+            <p><strong>Ticket Price:</strong> ₹350 per person</p>
+            <form action="magicshow1booking.php" method="post">
+                <input type="hidden" name="show_id" value="1">
+                <button type="submit">Book Your Tickets Now!</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <img src="http://localhost/fifthsempro/Hpgimages//show2.jpg" alt="Event Image">
+            <h2>Whimsical Conjurers.Mesmerizing Magic</h2>
+            <p>Don't miss our one-night-only performance of Whimsical Conjurers.Mesmerizing Magic</p>
+            <p><strong>Date:</strong> December 15, 2023</p>
+            <p><strong>Time:</strong> 7:30 PM</p>
+            <p><strong>Location:</strong> Karnataka Chitrakala Parishath, Art Complex, Kumara Krupa Road, Kumara Park East, Seshadripuram, Bangalore, Karnataka 560001, Bangalore</p>
+            <p><strong>Ticket Price:</strong> ₹400 per person</p>
+            <form action="magicshow2booking.php" method="post">
+                <input type="hidden" name="show_id" value="2">
+                <button type="submit">Book Your Tickets Now!</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <img src="http://localhost/fifthsempro/Hpgimages//show3.jpg" alt="Event Image">
+            <h2>Mystical Marvels.Spellbinding Sorcery</h2>
+            <p>Prepare to be captivated by Mystical Marvels: Where Magic comes to Life!</p>
+            <p><strong>Date:</strong> December 18, 2023</p>
+            <p><strong>Time:</strong> 5:30 PM</p>
+            <p><strong>Location:</strong> Mico layout, Banerghatta road, Bangalore 560076</p>
+            <p><strong>Ticket Price:</strong> ₹500</p>
+            <form action="magicshow3booking.php" method="post">
+                <input type="hidden" name="show_id" value="1">
+                <button type="submit">Book Your Tickets Now!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

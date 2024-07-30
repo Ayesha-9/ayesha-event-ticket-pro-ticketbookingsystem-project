@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c98abcd02.js" crossorigin="anonymous"></script>
+    <title>Makeup Event Details</title>
+    <style>
+        body {
+            background-image: url('http://localhost/fifthsempro/Hpgimages/Hairstylist2.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        header {
+            max-width: 250px;
+            color: #181717;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            height: 450px;
+            width: 430px;
+            margin: 50px auto; /* Added margin for better centering */
+        }
+
+        .box1 {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px; /* Added border-radius for rounded corners */
+        }
+
+        .box1 img {
+            width: 100%;
+            height: 50%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        h2 {
+            color: rgb(155, 153, 65);
+            font-size: 1.5rem; /* Adjusted font size */
+        }
+
+        p {
+            color: rgb(247, 244, 113);
+            font-weight: bold; /* Changed font-style to font-weight */
+            font-size: 1.2rem; /* Adjusted font size */
+        }
+
+        button {
+            background-color: #db3535;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="box1">
+            <img src="http://localhost/fifthsempro/Hpgimages/Hairstylist.jpeg" alt="Event Image" style="max-width: 110%; height: 55%;">
+        </br><h2>Sonya Stylist</h2>
+            <p>"Change your mood with new hair looks!"</p></br>
+            <form action="hairstyle.php" method="post">
+                <input type="hidden" name="show_id" value="1">
+                <button type="submit">Book Hairstylist @your place Now!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
